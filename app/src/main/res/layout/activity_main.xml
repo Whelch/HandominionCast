@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_texture"
+    tools:context="com.example.whelch.handominioncast.MainActivity"
+    android:id="@+id/galaxy">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/darken"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/treasure_icon"
+                android:id="@+id/imageView7"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="5"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hand_view">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/hand_wood_texture"
+            android:id="@+id/hand_background"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/handScrollView"
+            android:scrollbars="none"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/handLayout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/bureaucrat"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/cellar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/cellar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/cellar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/cellar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/cellar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxHeight="130dp"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/cellar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:adjustViewBounds="true" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/border"
+            android:id="@+id/hand_outline"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
