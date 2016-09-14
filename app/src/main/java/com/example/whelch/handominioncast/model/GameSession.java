@@ -1,7 +1,10 @@
 package com.example.whelch.handominioncast.model;
 
+import android.util.Log;
+
 import com.example.whelch.handominioncast.MainActivity;
 import com.example.whelch.handominioncast.exceptions.PreexistingGameSessionException;
+import com.example.whelch.handominioncast.model.cards.CardDefinition;
 import com.example.whelch.handominioncast.model.controllers.PlayerController;
 
 /**
@@ -44,6 +47,9 @@ public class GameSession {
 		this.activity = activity;
 
 		playerController = new PlayerController();
+
+		CardDefinition cardDef = CardDefinition.dictionary.get("Cellar");
+		Log.i("TEST", cardDef.description);
 	}
 
 	/*****************

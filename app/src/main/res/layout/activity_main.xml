@@ -76,76 +76,6 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/handLayout">
 
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView"
-                    android:src="@drawable/bureaucrat"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView2"
-                    android:src="@drawable/cellar"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView3"
-                    android:src="@drawable/cellar"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView4"
-                    android:src="@drawable/cellar"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView5"
-                    android:src="@drawable/cellar"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView6"
-                    android:src="@drawable/cellar"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:maxHeight="130dp"
-                    android:id="@+id/imageView8"
-                    android:src="@drawable/cellar"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:adjustViewBounds="true" />
-
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -159,6 +89,34 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/parchment"
+            />
+
+        <com.example.whelch.handominioncast.custom.views.CardDescriptionView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="{bold}Medium Text {coin=4}text afterwards{/bold}\nMedium Text{coin=2} text afterwards\n{line-break}\n{bold}Player +{coin}.\nWorth 1{vp}"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="33dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
     </RelativeLayout>
 
 </RelativeLayout>

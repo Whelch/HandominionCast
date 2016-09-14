@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Cellar",
+    "description": "{bold}+1 Actions{/bold}\n\nDiscard any number of cards.\n+1 card per card discarded.",
+    "module": "Base",
+    "cost": 2,
+    "victoryValue": 0,
+    "types": [
+      "Action"
+    ]
+  },
+  {
+    "name": "Moat",
+    "description": "{bold}+2 Cards{/bold}\n{line-break}\nWhen another player plays an Attack card, you may reveal this from your hand. If you do, you are unaffected by that Attack.",
+    "module": "Base",
+    "cost": 5,
+    "victoryValue": 0,
+    "types": [
+      "Action",
+      "Reaction"
+    ]
+  }
+]

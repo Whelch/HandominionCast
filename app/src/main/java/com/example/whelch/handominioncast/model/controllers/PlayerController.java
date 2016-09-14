@@ -17,7 +17,7 @@ public class PlayerController {
 	public PlayerController() {
 		for(int i = 0; i < 10; i++) {
 			Cellar cellar = new Cellar();
-//			handController.addCard(cellar);
+			handController.addCard(cellar);
 		}
 	}
 }
