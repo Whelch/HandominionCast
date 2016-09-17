@@ -1,7 +1,17 @@
 package com.example.whelch.handominioncast.components.controllers;
 
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.RelativeLayout;
+
 /**
- * Created by Whelch on 9/16/2016.
+ * Controlls the supply card layout screen
  */
-public class SupplyCardLayoutController {
+public class SupplyCardLayoutController extends RelativeLayout {
+
+	public SupplyCardLayoutController(Context context) {super(context);}
+
+	public SupplyCardLayoutController(Context context, AttributeSet attrs) {super(context, attrs);}
+
+	public SupplyCardLayoutController(Context context, AttributeSet attrs, int defStyleAttr) {super(context, attrs, defStyleAttr);}
 }

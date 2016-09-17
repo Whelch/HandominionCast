@@ -4,7 +4,7 @@ import android.widget.LinearLayout;
 
 import com.example.whelch.handominioncast.MainActivity;
 import com.example.whelch.handominioncast.R;
-import com.example.whelch.handominioncast.model.GameSession;
+import com.example.whelch.handominioncast.components.GameSession;
 import com.example.whelch.handominioncast.model.cards.Card;
 
 import java.util.ArrayList;
