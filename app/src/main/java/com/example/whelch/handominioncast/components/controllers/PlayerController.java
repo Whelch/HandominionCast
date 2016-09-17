@@ -1,9 +1,9 @@
-package com.example.whelch.handominioncast.model.controllers;
+package com.example.whelch.handominioncast.components.controllers;
 
 import com.example.whelch.handominioncast.model.cards.modules.base.Cellar;
-import com.example.whelch.handominioncast.model.controllers.player.DeckController;
-import com.example.whelch.handominioncast.model.controllers.player.DiscardPileController;
-import com.example.whelch.handominioncast.model.controllers.player.HandController;
+import com.example.whelch.handominioncast.components.controllers.player.DeckController;
+import com.example.whelch.handominioncast.components.controllers.player.DiscardPileController;
+import com.example.whelch.handominioncast.components.controllers.player.HandController;
 
 /**
  * Controls everything to do with a player.

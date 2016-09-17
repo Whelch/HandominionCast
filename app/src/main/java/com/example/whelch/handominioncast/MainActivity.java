@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.whelch.handominioncast.exceptions.PreexistingGameSessionException;
-import com.example.whelch.handominioncast.model.GameSession;
-import com.example.whelch.handominioncast.model.controllers.player.HandController;
+import com.example.whelch.handominioncast.components.GameSession;
+import com.example.whelch.handominioncast.components.controllers.player.HandController;
 
 public class MainActivity extends Activity {
 

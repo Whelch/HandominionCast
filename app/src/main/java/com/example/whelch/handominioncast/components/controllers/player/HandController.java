@@ -1,4 +1,4 @@
-package com.example.whelch.handominioncast.model.controllers.player;
+package com.example.whelch.handominioncast.components.controllers.player;
 
 import android.widget.LinearLayout;
 

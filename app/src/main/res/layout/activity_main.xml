@@ -93,30 +93,128 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/cardDescriptionLayout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true">
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
 
         <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/imageView"
+            android:id="@+id/cardDescriptionParchment"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:src="@drawable/parchment"
-            />
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/cardDescriptionCancelButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cancel_button"
+            android:layout_alignRight="@+id/cardDescriptionParchment"
+            android:layout_alignTop="@+id/cardDescriptionParchment"/>
 
         <com.example.whelch.handominioncast.custom.views.CardDescriptionView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="{bold}Medium Text {coin=4}text afterwards{/bold}\nMedium Text{coin=2} text afterwards\n{line-break}\n{bold}Player +{coin}.\nWorth 1{vp}"
-            android:id="@+id/textView2"
+            android:id="@+id/cardDescriptionText"
             android:layout_alignParentTop="false"
             android:layout_marginTop="33dp"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:layout_alignLeft="@+id/cardDescriptionParchment"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignRight="@+id/cardDescriptionParchment"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/supplyCardSelectionLayout">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView4"
+                android:src="@drawable/light_wood_tiled"
+                android:adjustViewBounds="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView3"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView5"
+                android:src="@drawable/border"
+                android:adjustViewBounds="false"
+                android:layout_alignParentRight="false"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:src="@drawable/light_wood_tiled"
+                android:adjustViewBounds="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView2"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView3"
+                android:src="@drawable/border"
+                android:adjustViewBounds="false"
+                android:layout_alignParentRight="false"
+                android:scaleType="fitXY"
+                />
+
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </RelativeLayout>

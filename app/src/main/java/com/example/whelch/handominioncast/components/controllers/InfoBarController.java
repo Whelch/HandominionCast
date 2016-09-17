@@ -1,4 +1,4 @@
-package com.example.whelch.handominioncast.model.controllers;
+package com.example.whelch.handominioncast.components.controllers;
 
 /**
  * Created by Whelch on 9/7/2016.

@@ -1,11 +1,11 @@
-package com.example.whelch.handominioncast.model;
+package com.example.whelch.handominioncast.components;
 
 import android.util.Log;
 
 import com.example.whelch.handominioncast.MainActivity;
+import com.example.whelch.handominioncast.components.controllers.PlayerController;
 import com.example.whelch.handominioncast.exceptions.PreexistingGameSessionException;
 import com.example.whelch.handominioncast.model.cards.CardDefinition;
-import com.example.whelch.handominioncast.model.controllers.PlayerController;
 
 /**
  * A GameSession keeps track of various things like:

@@ -52,8 +52,12 @@ public class CardDescriptionView extends TextView {
 
 	@Override
 	public void setText(final CharSequence text, BufferType type) {
-		Spannable s = getTextWithImages(text);
-		super.setText(s, BufferType.SPANNABLE);
+		if(!isInEditMode()) {
+			Spannable s = getTextWithImages(text);
+			super.setText(s, BufferType.SPANNABLE);
+		} else {
+			super.setText(text, type);
+		}
 	}
 
 	private Spannable getTextWithImages(CharSequence text) {
@@ -63,37 +67,6 @@ public class CardDescriptionView extends TextView {
 		addHorizontalLines(spannable);
 		addBoldSpans(spannable);
 		return spannable;
-	}
-
-	private boolean addImages(Context context, Spannable spannable) {
-		Pattern refImg = Pattern.compile("\\Q[img src=\\E([a-zA-Z0-9_]+?)\\Q/]\\E");
-//		Pattern refImg = Pattern.compile("\\{coin\\}"); d
-		boolean hasChanges = false;
-
-		Matcher matcher = refImg.matcher(spannable);
-		while (matcher.find()) {
-			boolean set = true;
-			for (ImageSpan span : spannable.getSpans(matcher.start(), matcher.end(), ImageSpan.class)) {
-				if (spannable.getSpanStart(span) >= matcher.start()
-						&& spannable.getSpanEnd(span) <= matcher.end()
-						) {
-					spannable.removeSpan(span);
-				} else {
-					set = false;
-					break;
-				}
-			}
-			String resname = spannable.subSequence(matcher.start(1), matcher.end(1)).toString().trim();
-			int id = R.drawable.treasure_icon;
-			if (set) {
-				hasChanges = true;
-				Drawable image = context.getResources().getDrawable(id);
-				image.setBounds(0, 0, (int) (getLineHeight()*1.2f), (int) (getLineHeight()*1.2f));
-				spannable.setSpan(new ImageSpan(image), matcher.start(), matcher.end(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-			}
-		}
-
-		return hasChanges;
 	}
 
 	/**

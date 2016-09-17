@@ -5,7 +5,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.whelch.handominioncast.model.GameSession;
+import com.example.whelch.handominioncast.components.GameSession;
 
 import java.util.function.Consumer;
 
